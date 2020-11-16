@@ -660,7 +660,7 @@ def main():
         delay=dict(required=False, type='int', default=10),
         repeat=dict(required=False, type='int', default=10),
         force_new_deployment=dict(required=False, default=False, type='bool'),
-        force_deletion=dict(required=True, default=False, type='bool'),
+        force_deletion=dict(required=False, default=False, type='bool'),
         deployment_configuration=dict(required=False, default={}, type='dict'),
         placement_constraints=dict(
             required=False,
