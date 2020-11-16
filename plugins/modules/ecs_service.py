@@ -128,6 +128,11 @@ options:
           field:
             description: The field to apply the placement strategy against.
             type: str
+    force_deletion:
+        description:
+          - Forcabily delete the service. Required when deleting a service with >0 scale, or no target group.
+        default: False
+        type: bool
     network_configuration:
         description:
           - Network configuration of the service. Only applicable for task definitions created with I(network_mode=awsvpc).
